@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: rgb(255 255 255);
+  --foreground: rgb(45 55 72);
+  --primary: rgb(102 126 234);
+  --accent: rgb(118 75 162);
+  --border: rgb(226 232 240);
+  --ring: rgb(102 126 234);
+}
+
+.animated-gradient {
+  background: linear-gradient(
+    90deg,
+    #7553FF 0%,
+    #A737B4 25%,
+    #7553FF 50%,
+    #A737B4 75%,
+    #7553FF 100%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientTravel 3s ease-in-out infinite;
+}
+
+@keyframes gradientTravel {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
