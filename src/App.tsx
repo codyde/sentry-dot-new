@@ -7,7 +7,7 @@ function App() {
             Sentry.new
           </span>
         </h1>
-        <p className="text-xl sm:text-2xl text-[#00F5FF]">
+        <p className="text-xl sm:text-2xl text-[#F5F5F0]">
           Something cool is coming soon
         </p>
       </div>
